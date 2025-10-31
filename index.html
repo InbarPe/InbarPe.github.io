@@ -47,6 +47,16 @@
     .card p{color:var(--muted);margin:0 0 12px}
     footer{border-top:1px solid rgba(255,255,255,.06);color:var(--muted)}
     .pill{display:inline-block;padding:4px 10px;border-radius:999px;background:rgba(255,255,255,.06);color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.3px}
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      padding: 0;
+    }
+
+    .language-list {
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
@@ -54,7 +64,6 @@
     <div class="inner">
       <div class="brand">Inbar Perets</div>
       <div class="menu">
-        <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
@@ -71,52 +80,54 @@
     <p>Neuroscience PhD student at the Weizmann Institute of Science.</p>
   </header>
 
-  <section  id="experience" class="container">
-    <h2 class="h2">Experience</h2>
-    <div class="grid">
-      <article class="card">
-        <h3>QA Engineer · ONE Technologies</h3>
-        <p>Oct 2017 to Dec 2022 · Tel Aviv</p>
-        <p>Manual and SQL based testing, defect tracking, cross team collaboration, release quality ownership.</p>
-      </article>
-
-      <article class="card">
-        <h3>Undergraduate Research Assistant · Sagol School of Neuroscience</h3>
-        <p>Mar 2021 to Jun 2022</p>
-        <p>Supporting lab research in neuroscience with data collection and analysis.</p>
-      </article>
-
-      <article class="card">
-        <h3>Customer Service Representative · Novolog</h3>
-        <p>Jan 2017 to Oct 2017</p>
-        <p>Patient facing support and operations in a healthcare setting.</p>
-      </article>
-    </div>
-  </section>
-
   <section id="education" class="container">
     <h2 class="h2">Education</h2>
     <div class="grid">
       <article class="card">
-        <h3>Weizmann Institute of Science</h3>
-        <p>PhD student in Neuroscience · Present</p>
+        <h3>PhD student in Neuroscience</h3>
+        <p>Weizmann Institute of Science · Present</p>
+        <p></p>
+        <p>Studying the visceral-sensory cortico-thalamic loop in interoception under the supervision of Dr. Yoav Livneh</p>
+        <a href="https://www.weizmann.ac.il/brain-sciences/labs/livneh/" target="_blank" rel="noreferrer">Website Name</a>
       </article>
       <article class="card">
-        <h3>Weizmann Institute of Science</h3>
-        <p>MSc in Neuroscience · Oct 2022 to Oct 2024</p>
+        <h3>MSc in Neuroscience</h3>
+        <p>Weizmann Institute of Science · Oct 2022 to Oct 2024</p>
+        <p>Studied the role of dopamine and thalamic visceral-sensory inputs to the insular cortex in need-driven behavior under the supervision of Dr. Yoav Livneh</p>
       </article>
       <article class="card">
-        <h3>Tel Aviv University, Sagol School of Neuroscience</h3>
-        <p>BSc in Biology and Psychobiology with an emphasis on Neuroscience · Oct 2019 to Oct 2022</p>
+        <h3>BSc in Biology and Psychobiology with an emphasis on Neuroscience</h3>
+        <p>Sagol School of Neuroscience, Tel Aviv University · Oct 2019 to Oct 2022</p>
+        <li>Undergraduate level research in Dr. Ido Tavor's lab, Sackler School of Medicine Studying the ongoing structural changes in the brain during motor learning using Diffusion MRI.</li>
+        <li>Undergraduate level research in Prof. Moshe Parnas's lab, Sackler School of Medicine Generation of Recombinant Drosophila Melanogaster Flies</li>
       </article>
     </div>
   </section>
 
-  <section id="skills" class="container">
+  <section id="skills & research techniques" class="container">
     <h2 class="h2">Skills</h2>
     <div class="card" style="padding:24px">
-      <p>Quality Assurance, Analytical thinking, SQL</p>
-      <p>Languages: Hebrew native, English full professional, French limited working</p>
+      <ul class="skills-grid">
+        <li>Automation development in node.js</li>
+        <li>Machine learning (DeepLabCut)</li>
+        <li>SQL</li>
+        <li>Data analysis - python, Matlab</li>
+        <li>Two-photon imaging</li>
+        <li>Fiber photometry</li>
+        <li>Optogenetics</li>
+        <li>Stereotactic surgery</li>
+        <li>Intracardial perfusion</li>
+        <li>PCR</li>
+        <li>Immunohistochemistry</li>
+        <li>Mice behavioral paradigms</li>
+        <li>MRI scanning and analysis</li>
+      </ul>
+      Languages:
+      <ul class="language-list">
+        <li>Hebrew (native)</li>
+        <li>English (full professional)</li>
+        <li>French (limited working)</li>
+      </ul>
     </div>
   </section>
 
