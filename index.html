@@ -51,15 +51,20 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
-      padding-left: 20px; /* added indent so bullets aren't flush to the card edge */
+      padding-left: 20px;
       margin: 0;
       list-style-position: outside;
     }
 
     .language-list {
       margin-top: 10px;
-      padding-left: 28px; /* indent the language bullets under the "Languages:" label */
+      padding-left: 28px;
       margin-bottom: 0;
+    }
+
+    .education-list {
+      margin: 8px 0 0 20px; /* space from the preceding paragraph and indent from card edge */
+      padding-left: 18px;   /* control bullet indentation */
     }
   </style>
 </head>
@@ -69,7 +74,7 @@
       <div class="brand">Inbar Perets</div>
       <div class="menu">
         <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
+        <a href="#skills & research techniques">skills & research techniques</a>
         <a href="#contact">Contact</a>
 
       </div>
@@ -102,16 +107,18 @@
       <article class="card">
         <h3>BSc in Biology and Psychobiology with an emphasis on Neuroscience</h3>
         <p>Sagol School of Neuroscience, Tel Aviv University · Oct 2019 to Oct 2022</p>
-        <li>Undergraduate level research in Dr. Ido Tavor's lab, Sackler School of Medicine Studying the ongoing structural changes in the brain during motor learning using Diffusion MRI.</li>
-        <li>Undergraduate level research in Prof. Moshe Parnas's lab, Sackler School of Medicine Generation of Recombinant Drosophila Melanogaster Flies</li>
+        <ul class="education-list">
+          <li>Undergraduate level research in Dr. Ido Tavor's lab, Sackler School of Medicine — studying ongoing structural changes in the brain during motor learning using Diffusion MRI.</li>
+          <li>Undergraduate level research in Prof. Moshe Parnas's lab, Sackler School of Medicine — generation of recombinant Drosophila melanogaster flies.</li>
+        </ul>
       </article>
     </div>
   </section>
 
   <section id="skills & research techniques" class="container">
-    <h2 class="h2">Skills</h2>
+    <h2 class="h2">Skills & Research Techniques</h2>
     <div class="card" style="padding:24px">
-      <ul class="skills-grid">
+      <ul class="skills & research techniques-grid">
         <li>Automation development in node.js</li>
         <li>Machine learning (DeepLabCut)</li>
         <li>SQL</li>
@@ -126,6 +133,7 @@
         <li>Mice behavioral paradigms</li>
         <li>MRI scanning and analysis</li>
       </ul>
+      
       Languages:
       <ul class="language-list">
         <li>Hebrew (native)</li>
