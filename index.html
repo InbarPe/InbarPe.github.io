@@ -51,11 +51,15 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
-      padding: 0;
+      padding-left: 20px; /* added indent so bullets aren't flush to the card edge */
+      margin: 0;
+      list-style-position: outside;
     }
 
     .language-list {
       margin-top: 10px;
+      padding-left: 28px; /* indent the language bullets under the "Languages:" label */
+      margin-bottom: 0;
     }
   </style>
 </head>
@@ -134,7 +138,7 @@
   <section id="contact" class="container">
     <h2 class="h2">Contact</h2>
     <div class="card" style="padding:24px">
-      <p>Email: <a href="mailto:inbar6796@gmail.com">inbar6796@gmail.com</a><br>
+      <p>Email: <a href="mailto:inbar.perets@weizmann.ac.il">inbar.perets@weizmann.ac.il</a><br>
       LinkedIn: <a href="https://www.linkedin.com/in/inbar-perets-88050622b" target="_blank" rel="noreferrer">inbar-perets</a></p>
     </div>
   </section>
